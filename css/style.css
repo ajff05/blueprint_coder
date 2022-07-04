@@ -25,6 +25,7 @@ html {
 
 .header__index {
     grid-area: header;
+    background: linear-gradient(to right, gray, white);
 }
 
 .cards__destacado {

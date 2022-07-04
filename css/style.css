@@ -1,0 +1,319 @@
+/* Configuración inicial CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "content"
+    "footer";
+}
+
+.header__index {
+    grid-area: header;
+}
+
+.cards__destacado {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards__productos {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__index {
+    grid-area: main;
+}
+
+.content__index {
+    grid-area: content;
+    align-items: flex-start;
+}
+
+.footer__index {
+    grid-area: footer;
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.24);
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 30%;
+    width: 30%;
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__lista a {
+    text-decoration: none;
+    color: rgb(189, 189, 7);
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.menu__lista li {
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu li {
+    display: block;
+    font-size: 2rem;
+    background-color: rgb(189, 189, 7);
+
+}
+
+.menu__lista li:hover .submenu {
+    display: block;
+}
+
+
+#coleccion {
+    background-image: url(../images/mockup-camiseta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(54, 53, 53);
+}
+
+h2 {
+    color: rgb(54, 53, 53);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(54, 53, 53);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2rem;
+}
+#coleccion h2 {
+    text-align: left;
+    padding: 2rem;
+    
+}
+
+.main__texto {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.parallax {
+    background-image: url(../images/retrato-joven-rubia-camiseta-blanca_273609-11508.webp);
+    height: 600px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.24);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    /* display: flex;
+    flex-direction: row; */
+    font-size: 3rem;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+}
+
+.footer2 {
+    /* display: flex;
+    flex-direction: row; */
+    font-size: 2rem;
+    justify-content: center;
+}
+
+table {
+    margin: auto;
+}
+
+.table__destacado {
+    text-align: center;
+    border: 0.5rem solid gold;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5rem;
+    height: 25%;
+    width: 25%;
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+    /* height: 25%; */
+    width: 25%;
+
+  }
+
+  .galeria {
+    margin: 5rem;
+  }
+
+  .encabezado {
+    margin: 5rem;
+  }
+
+  #principal {
+    margin: 5rem;
+  }
+
+  .descripcion {
+    margin: 3rem;
+  }
+
+  .caracteristicas {
+    margin: 5rem;
+  }
+
+
+  .boton {
+    text-align: right;
+    margin-right: 5rem;
+  }
+
+  .contact_info {
+    margin: 5rem;
+  }
+
+  .form {
+    margin: 5rem;
+  }
+
+  /* Responsive Design */
+@media screen and (max-width: 500px) {
+
+    .header__index {
+        flex-direction: column;
+    }
+
+    .index {
+        flex-wrap: wrap;
+    }
+
+    .header__index li {
+        justify-items: center;
+    }
+    .cards__destacado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards__productos {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer1 {
+        flex-direction: column;
+    }
+
+    .footer2 {
+        align-items: center;
+    }
+
+    .content__index {
+        justify-items: flex-start;
+    }
+
+    .menu {
+        align-items: center;
+    }
+
+    .menu__lista {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .card {
+        width: 80%;
+     }
+
+}

@@ -12,7 +12,7 @@ html {
 
 
 
-.index {
+/* .index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
@@ -21,11 +21,31 @@ html {
     "main"
     "content"
     "footer";
+} */
+
+.navbar__gradient {
+    grid-area: header;
+    background: linear-gradient(to right, rgba(158, 157, 157, 0.808), white);
 }
 
-.header__index {
-    grid-area: header;
-    background: linear-gradient(to right, gray, white);
+.navbar-brand {
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+}
+.navbar-nav {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.dropdown-menu {
+    font-size: 2rem;
+}
+
+.navbar-nav li {
+    padding: 2rem;
 }
 
 .cards__destacado {
@@ -63,11 +83,11 @@ html {
     grid-area: footer;
 }
 
-header {
+/* header {
     background-color: rgba(128, 128, 128, 0.24);
     display: flex;
     flex-direction: row;
-}
+} */
 
 .logo {
     height: 30%;

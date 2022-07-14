@@ -1,0 +1,42 @@
+$colorPrincipal: rgb(189, 189, 7);
+
+
+.menu__lista li {
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
+    a {
+        text-decoration: none;
+        color: $colorPrincipal;
+        text-align: right;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    &:hover{
+        display: block;
+    }
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    li {
+        display: block;
+        font-size: 2rem;
+        background-color: $colorPrincipal;
+    
+    }
+}
+
+#coleccion {
+    background-image: url(../images/mockup-camiseta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    h2 {
+        text-align: left;
+        padding: 2rem;
+        
+    }
+}

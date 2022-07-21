@@ -40,3 +40,51 @@ $colorPrincipal: rgb(189, 189, 7);
         
     }
 }
+
+
+/* USO DE MIXIN */
+
+@mixin flexbox($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+}
+
+.cards__destacado {
+    @include flexbox(flex, row);
+}
+
+.cards__productos {
+    @include flexbox(flex, row);
+}
+
+.footer1 {
+    @include flexbox(flex, row);
+}
+
+
+/* USO DE EXTEND */
+
+.footer2 {
+    @extend .footer1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* USO DE MAP */
+
+$formato: (
+    colorSecundario: rgb(54, 53, 53),
+    alineacion: center,
+    estiloFuente: bold
+);
+
+h2 {
+    color: map-get($formato, colorSecundario);
+    text-align: map-get($formato, alineacion);
+    font-weight: map-get($formato, estiloFuente);
+    font-size: 4rem;
+}
+
+
+

@@ -28,3 +28,28 @@
   #coleccion h2 {
     text-align: left;
     padding: 2rem; }
+
+/* USO DE MIXIN */
+.cards__destacado {
+  display: flex;
+  flex-direction: row; }
+
+.cards__productos {
+  display: flex;
+  flex-direction: row; }
+
+.footer1, .footer2 {
+  display: flex;
+  flex-direction: row; }
+
+/* USO DE EXTEND */
+.footer2 {
+  flex-wrap: wrap;
+  align-items: center; }
+
+/* USO DE MAP */
+h2 {
+  color: #363535;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem; }
